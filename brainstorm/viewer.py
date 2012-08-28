@@ -8,14 +8,14 @@ from brainstorm.main import parse_path
 from brainstorm.main import parse_acl
 
 
-class List(Lister):
+class Buckets(Lister):
     """List either buckets or objects, depending on arguments
     """
 
     log = logging.getLogger(__name__)
 
     def get_parser(self, prog_name):
-        parser = super(List, self).get_parser(prog_name)
+        parser = super(Buckets, self).get_parser(prog_name)
         parser.add_argument('buckets', nargs='*', type=parse_path,
             help='list of buckets to show contents of')
         parser.add_argument('--prefix', dest='prefix', nargs='?',

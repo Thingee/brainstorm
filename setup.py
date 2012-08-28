@@ -30,7 +30,8 @@ setup(
             'brainstorm = brainstorm.main:main'
             ],
         'brainstorm.commands': [
-            'list = brainstorm.viewer:List',
+            'list buckets = brainstorm.viewer:Buckets',
+            'buckets = brainstorm.viewer:Buckets',
             'show = brainstorm.viewer:Show',
             'delete = brainstorm.manipulator:DeleteObjects',
             'down = brainstorm.manipulator:DownloadObject',
